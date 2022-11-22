@@ -5,9 +5,6 @@ import (
 	"regexp"
 )
 
-type SMSSender interface {
-	Send(to, message string) error
-}
 type handler struct {
 	sender SMSSender
 }
